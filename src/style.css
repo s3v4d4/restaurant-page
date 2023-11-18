@@ -41,13 +41,10 @@ body {
 
 .middle {
     display: grid;
-    justify-content: center;
-    align-content: center;
-}
-
-.middle > div {
+    justify-self: center;
+    align-self: center;
     width: 500px;
-    height: 500px;
+    height: 400px;
     background-color: rgba(0, 0, 0, 0.8);
     font-family: 'Pacifico', cursive;
     color: white;
