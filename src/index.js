@@ -7,7 +7,6 @@ import createMenu from "./menu";
 import createContact from "./contact";
 
 
-
 const page = document.getElementById("content");
 
 const restaurant_logo = document.getElementById("logo");
