@@ -1,8 +1,21 @@
+import './style.css';
+import r_logo from "../images/logom.png";
+import g_logo from "../images/github.svg";
+
 import createPage from "./init-page";
 import createMenu from "./menu";
 import createContact from "./contact";
 
+
+
 const page = document.getElementById("content");
+
+const restaurant_logo = document.getElementById("logo");
+console.log(restaurant_logo);
+restaurant_logo.src = r_logo;
+
+const github_logo = document.getElementById('github_logo');
+github_logo.src = g_logo;
 
 createPage('Ararat','Sevada Sahakian');
 
