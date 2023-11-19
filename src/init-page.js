@@ -1,11 +1,7 @@
 const createPage = function (name,author){
     const page = document.getElementById("content");
-    const header = createHeader(name);
-    const mid = createMiddle();
-    const footer = createFooter(author);
-    page.appendChild(header);
+    const mid = createContent();
     page.appendChild(mid);
-    page.appendChild(footer);
 } 
 
 
@@ -24,7 +20,7 @@ function createHeader(name){
     return div;
 }
 
-function createMiddle(){
+function createContent(){
     const div = document.createElement('div');
     const h1 = document.createElement('h1');
     const h2_1 = document.createElement('h2');
@@ -40,7 +36,7 @@ function createMiddle(){
     for (let el of elements){
         div.appendChild(el);
     }
-    div.classList.add('middle');
+    div.classList.add('home');
     return div;
 }
 
