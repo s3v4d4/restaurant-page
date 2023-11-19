@@ -1,3 +1,5 @@
+import './style.css';
+
 const createContact = function (){
     const page = document.getElementById("content");
     const content = createContent();

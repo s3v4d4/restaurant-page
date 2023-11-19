@@ -1,3 +1,19 @@
+import './style.css';
+
+import bbq from '../images/bbq.png';
+import pizza from '../images/pizza.png';
+import ramen from '../images/ramen.png';
+import water from '../images/water.png';
+import wine from '../images/wine.png';
+
+const images = {
+    bbq,
+    pizza,
+    ramen,
+    water,
+    wine
+};
+
 const createMenu = function (){
     const page = document.getElementById("content");
     const content = createContent();
@@ -27,7 +43,8 @@ function createDish(dish,description) {
     const dishdescription = document.createElement('h3');
     const img = document.createElement('img');
 
-    img.src = "../images/" + dish + ".png";
+    console.log(window[dish]);
+    img.src = images[dish];
     img.alt = description;
 
     dishname.innerHTML = dish;

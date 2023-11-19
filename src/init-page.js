@@ -1,3 +1,8 @@
+import './style.css';
+
+import logo from '../images/logom.png';
+import github_logo from '../images/github.svg';
+
 const createPage = function (name,author){
     const page = document.getElementById("content");
     const mid = createContent();
@@ -11,7 +16,7 @@ function createHeader(name){
     const img = document.createElement('img');
     const title = document.createElement('h1');
 
-    img.src = "../images/logom.png";
+    img.src = logo;
     img.alt = "restaurant logo";
     title.innerHTML = name;
     div.appendChild(img);
@@ -46,7 +51,7 @@ function createFooter(name){
     const img = document.createElement('img');
     const author = document.createElement('h2');
 
-    img.src = "../images/github.svg";
+    img.src = github;
     img.alt = "github logo";
     author.innerHTML = name;
 
