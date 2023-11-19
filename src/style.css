@@ -1,0 +1,98 @@
+body {
+    background-image: url(../images/armenian_food.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 150px 1fr 100px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+.header,.footer {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1.5rem;
+    gap: 10px;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.logo > img {
+    max-width: 200px;
+    max-height: 100px;
+}
+
+.footer > img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+}
+
+.footer {
+    font-size: 1rem;
+}
+
+#content{
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Pacifico', cursive;
+    color: white;
+    border-radius: 50px;
+    margin: 100px;
+    padding: 50px 100px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dish > img{
+    width: 100px;
+    height: 100px;
+}
